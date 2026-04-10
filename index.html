@@ -9,7 +9,6 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            /* Sunrise Gradient: Pink to Orange to soft Yellow */
             background: linear-gradient(135deg, #fda4af 0%, #fb923c 50%, #fef3c7 100%);
             background-attachment: fixed;
             min-height: 100vh;
@@ -17,7 +16,6 @@
         }
         .serif { font-family: 'Playfair Display', serif; }
         
-        /* Light Glassmorphism Layers */
         .glass-base {
             background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(15px);
@@ -31,24 +29,35 @@
             transition: all 0.3s ease;
         }
 
-        .glass-panel:hover {
-            background: rgba(255, 255, 255, 0.6);
-            border-color: #f43f5e;
-            transform: translateY(-2px);
-        }
-
         .sunrise-text {
             background: linear-gradient(90deg, #be123c, #ea580c);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
-        .growth-glow {
-            box-shadow: 0 0 25px rgba(251, 146, 60, 0.15);
+        @media print {
+            body { background: white !important; padding: 0 !important; }
+            .no-print { display: none !important; }
+            .glass-base { 
+                box-shadow: none !important; 
+                border: none !important; 
+                background: white !important;
+                backdrop-filter: none !important;
+            }
+            .glass-panel { background: white !important; border: 1px solid #e2e8f0 !important; }
+            .growth-glow { box-shadow: none !important; }
         }
     </style>
 </head>
 <body class="p-4 md:p-8 lg:p-12">
+
+    <!-- Print Button -->
+    <div class="max-w-4xl mx-auto mb-6 flex justify-end no-print">
+        <button onclick="window.print()" class="bg-slate-900 hover:bg-slate-800 text-white px-6 py-3 rounded-full font-bold text-sm transition flex items-center gap-2 shadow-lg">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+            SAVE AGREEMENT AS PDF
+        </button>
+    </div>
 
     <div class="max-w-4xl mx-auto glass-base rounded-[2.5rem] overflow-hidden mb-12 growth-glow">
         <!-- Header Section -->
@@ -165,14 +174,6 @@
                         <div class="border-b border-slate-300 pb-4 mb-3 h-10"></div>
                         <p class="text-[0.6rem] font-bold uppercase tracking-widest text-slate-400">Jaasiel [Last Name]</p>
                     </div>
-                    <div class="signature-block">
-                        <div class="border-b border-slate-300 pb-4 mb-3 h-10"></div>
-                        <p class="text-[0.6rem] font-bold uppercase tracking-widest text-slate-400">Maria [Last Name]</p>
-                    </div>
-                    <div class="signature-block">
-                        <div class="border-b border-slate-300 pb-4 mb-3 h-10"></div>
-                        <p class="text-[0.6rem] font-bold uppercase tracking-widest text-slate-400">Louis [Last Name]</p>
-                    </div>
                 </div>
 
                 <!-- Witnesses Section -->
@@ -185,7 +186,7 @@
                         </div>
                         <div class="signature-block">
                             <div class="border-b border-slate-300 pb-4 mb-3 h-10"></div>
-                            <p class="text-[0.6rem] font-bold uppercase tracking-widest text-slate-400">Louis Ramirez</p>
+                            <p class="text-[0.6rem] font-bold uppercase tracking-widest text-slate-400">Louise Cruz</p>
                         </div>
                     </div>
                 </div>
