@@ -3,187 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Co-Ownership Agreement | 5934 Concho River</title>
+    <title>Concho River Casa Covenant</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-        .clause-card:hover { border-left-color: #3b82f6; }
-        @media print {
-            .no-print { display: none; }
-            .print-only { display: block; }
-            body { background: white; }
-            .shadow-xl { shadow: none; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at top right, #2e1065, #0f172a 60%);
+            background-attachment: fixed;
+            min-height: 100vh;
+            color: #e2e8f0;
+        }
+        .serif { font-family: 'Playfair Display', serif; }
+        
+        /* Dark Glassmorphism Layers */
+        .glass-base {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+        
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .glass-panel:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(249, 115, 22, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .gold-gradient {
+            background: linear-gradient(to right, #fbbf24, #f97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .sunset-glow {
+            box-shadow: 0 0 30px rgba(249, 115, 22, 0.1);
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900 leading-relaxed">
+<body class="p-4 md:p-8 lg:p-12">
 
-    <div class="max-w-4xl mx-auto py-12 px-6">
-        <!-- Header -->
-        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 mb-8 text-center">
-            <h1 class="text-3xl font-bold text-slate-800 mb-2">Property Co-Ownership Agreement</h1>
-            <p class="text-blue-600 font-semibold tracking-wide uppercase text-sm mb-4">5934 Concho River, San Antonio, TX 78253</p>
-            <div class="flex justify-center gap-8 border-t border-slate-100 pt-6">
-                <div>
-                    <p class="text-xs text-slate-500 uppercase font-bold">Co-Owner A</p>
-                    <p class="text-lg font-semibold">Abraham</p>
-                    <p class="text-sm text-blue-500">50% Interest</p>
-                </div>
-                <div class="border-l border-slate-200"></div>
-                <div>
-                    <p class="text-xs text-slate-500 uppercase font-bold">Co-Owner B</p>
-                    <p class="text-lg font-semibold">Lidia</p>
-                    <p class="text-sm text-blue-500">50% Interest</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Section 1: Financial Parity -->
-        <div class="space-y-6">
-            <section class="bg-white rounded-xl p-8 shadow-sm border-l-4 border-blue-500 clause-card transition-all">
-                <h2 class="text-xl font-bold mb-4 flex items-center">
-                    <span class="bg-blue-100 text-blue-600 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">1</span>
-                    The 50/50 Parity Objective
-                </h2>
-                <p class="text-slate-600 mb-4">
-                    The fundamental goal of this partnership is to maintain an equal split in ownership, responsibility, and equity. Both parties agree that any deviation from equal payments is a temporary imbalance that must be corrected to maintain the integrity of the agreement.
-                </p>
-                <ul class="list-disc ml-6 space-y-2 text-slate-600">
-                    <li><strong>Monthly Obligation:</strong> Mortgage, taxes, and insurance are split exactly 50/50.</li>
-                    <li><strong>Catch-Up Goal:</strong> If one party covers a gap, the primary financial priority of the delinquent party is to reimburse the payer as soon as funds are available.</li>
-                </ul>
-            </section>
-
-            <!-- Section 2: Imbalance Logic -->
-            <section class="bg-white rounded-xl p-8 shadow-sm border-l-4 border-amber-500 clause-card transition-all">
-                <h2 class="text-xl font-bold mb-4 flex items-center">
-                    <span class="bg-amber-100 text-amber-600 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">2</span>
-                    Payment Imbalance & Equity Logic
-                </h2>
-                <p class="text-slate-600 mb-4">
-                    In the event that the "Catch-Up" goal is not met prior to a sale or refinancing, the following <strong>Debt-First Model</strong> shall be applied:
-                </p>
-                <div class="bg-amber-50 p-4 rounded-lg border border-amber-100 text-sm italic text-amber-800">
-                    "Any over-contribution by one party is recorded as a 'Contribution Credit.' Before the final 50/50 split of net proceeds, the party with the credit is paid back in full from the top of the profit."
-                </div>
-            </section>
-
-            <!-- Section 3: Operations -->
-            <section class="bg-white rounded-xl p-8 shadow-sm border-l-4 border-emerald-500 clause-card transition-all">
-                <h2 class="text-xl font-bold mb-4 flex items-center">
-                    <span class="bg-emerald-100 text-emerald-600 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">3</span>
-                    Operating & Maintenance
-                </h2>
-                <div class="grid md:grid-cols-2 gap-6 text-slate-600">
-                    <div>
-                        <h3 class="font-bold text-slate-800 mb-2">Routine Costs</h3>
-                        <p class="text-sm">Minor repairs under $500 are handled as they arise and balanced monthly to keep the 50/50 ratio.</p>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-slate-800 mb-2">Major Improvements</h3>
-                        <p class="text-sm">Expenses over $500 require mutual written consent before the work commences.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Section 4: Exit Strategy -->
-            <section class="bg-white rounded-xl p-8 shadow-sm border-l-4 border-slate-800 clause-card transition-all">
-                <h2 class="text-xl font-bold mb-4 flex items-center">
-                    <span class="bg-slate-100 text-slate-800 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">4</span>
-                    Exit Strategy & Right of First Refusal
-                </h2>
-                <p class="text-slate-600 mb-4">
-                    If one owner wishes to sell their interest, they must offer it to the other owner first at fair market value. If a buy-out is not possible, the house will be listed for sale to the public.
-                </p>
-            </section>
-        </div>
-
-        <!-- Interactive Calculator -->
-        <div class="mt-12 no-print">
-            <div class="bg-slate-800 text-white rounded-2xl p-8 shadow-xl">
-                <h2 class="text-2xl font-bold mb-6 text-center">Equity Reconciliation Tool</h2>
-                <p class="text-slate-400 text-sm text-center mb-8">Calculate the payout based on our "Debt-First" reimbursement logic.</p>
+    <div class="max-w-4xl mx-auto glass-base rounded-[2.5rem] overflow-hidden mb-12 sunset-glow">
+        <!-- Header Section -->
+        <div class="p-12 text-center relative border-b border-white/5">
+            <!-- Background Decorative Element -->
+            <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('https://www.transparenttextures.com/patterns/dark-matter.png');"></div>
+            
+            <!-- Logo Integration -->
+            <div class="relative inline-block mb-8">
+                <div class="absolute inset-0 blur-2xl bg-orange-500/20 rounded-full"></div>
+                <img src="Gemini_Generated_Image_uzxpmvuzxpmvuzxp.jpg" 
+                     alt="Concho River Casa Logo" 
+                     class="relative w-40 h-40 md:w-56 md:h-56 mx-auto rounded-full border border-white/10 shadow-2xl object-cover"
+                     onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='block';">
                 
-                <div class="grid md:grid-cols-3 gap-6 mb-8">
-                    <div>
-                        <label class="block text-xs font-bold uppercase text-slate-400 mb-2">Projected Net Sale Profit</label>
-                        <input type="number" id="saleProfit" value="100000" class="w-full bg-slate-700 border border-slate-600 rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold uppercase text-slate-400 mb-2">Abraham's Extra Input</label>
-                        <input type="number" id="abrahamExtra" value="0" class="w-full bg-slate-700 border border-slate-600 rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold uppercase text-slate-400 mb-2">Lidia's Extra Input</label>
-                        <input type="number" id="lidiaExtra" value="10000" class="w-full bg-slate-700 border border-slate-600 rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    </div>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-4">
-                    <div class="bg-slate-900/50 p-6 rounded-xl border border-slate-700">
-                        <p class="text-xs text-slate-400 uppercase font-bold mb-1">Abraham's Final Payout</p>
-                        <p class="text-3xl font-bold text-blue-400" id="abrahamPayout">$0.00</p>
-                    </div>
-                    <div class="bg-slate-900/50 p-6 rounded-xl border border-slate-700">
-                        <p class="text-xs text-slate-400 uppercase font-bold mb-1">Lidia's Final Payout</p>
-                        <p class="text-3xl font-bold text-emerald-400" id="lidiaPayout">$0.00</p>
-                    </div>
+                <!-- Fallback in case image doesn't load -->
+                <div id="logo-fallback" class="hidden w-40 h-40 mx-auto bg-slate-800 rounded-full flex items-center justify-center border border-white/10">
+                    <span class="gold-gradient text-4xl serif font-bold text-center p-4">CRCC</span>
                 </div>
             </div>
+
+            <h1 class="serif text-5xl md:text-7xl font-bold mb-4 tracking-tighter text-white">THE COVENANT</h1>
+            <p class="gold-gradient font-bold tracking-[0.3em] uppercase text-xs md:text-sm">Concho River Casa • Excellence Required</p>
         </div>
 
-        <!-- Footer / Signature -->
-        <div class="mt-12 pt-8 border-t border-slate-200 text-center">
-            <p class="text-slate-500 text-sm mb-8">This document serves as a record of mutual understanding for the management of 5934 Concho River.</p>
-            <div class="flex flex-col md:flex-row justify-center gap-12 print-only">
-                <div class="border-t border-slate-800 w-64 pt-2 mt-12">
-                    <p class="font-bold">Abraham</p>
-                    <p class="text-xs text-slate-400">Date</p>
+        <!-- Content Section -->
+        <div class="p-8 md:p-20 space-y-20">
+            
+            <!-- Mission Statement -->
+            <section class="text-center space-y-6">
+                <h2 class="text-[0.6rem] font-black uppercase tracking-[0.5em] text-slate-500">The Primary Mandate</h2>
+                <blockquote class="serif italic text-3xl md:text-4xl text-white/90 leading-tight px-4">
+                    "A sanctuary for high-level execution and personal evolution."
+                </blockquote>
+                <p class="text-slate-400 max-w-2xl mx-auto leading-relaxed text-lg font-light">
+                    We exist to transmute collective ambition into financial prosperity and professional mastery. Our focus is absolute, our growth is inevitable, and our standard is non-negotiable.
+                </p>
+            </section>
+
+            <!-- Section I: Purpose -->
+            <section>
+                <div class="flex items-center gap-6 mb-10">
+                    <div class="h-px flex-1 bg-white/10"></div>
+                    <h3 class="serif text-2xl text-white">I. The Mission</h3>
+                    <div class="h-px flex-1 bg-white/10"></div>
                 </div>
-                <div class="border-t border-slate-800 w-64 pt-2 mt-12">
-                    <p class="font-bold">Lidia</p>
-                    <p class="text-xs text-slate-400">Date</p>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="glass-panel p-8 rounded-3xl">
+                        <h4 class="font-bold mb-3 text-orange-400 uppercase text-xs tracking-widest">Career Dominance</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">Unwavering expansion of <span class="text-white">Music for All Hearts</span> and <span class="text-white">Alamo Energy Solutions</span>.</p>
+                    </div>
+                    <div class="glass-panel p-8 rounded-3xl">
+                        <h4 class="font-bold mb-3 text-orange-400 uppercase text-xs tracking-widest">Financial Fortification</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">The disciplined pursuit of personal wealth, strategic savings, and total sovereignty.</p>
+                    </div>
+                    <div class="glass-panel p-8 rounded-3xl">
+                        <h4 class="font-bold mb-3 text-orange-400 uppercase text-xs tracking-widest">Inner Mastery</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">Cultivating mental clarity, elite physical discipline, and emotional stoicism.</p>
+                    </div>
+                    <div class="glass-panel p-8 rounded-3xl">
+                        <h4 class="font-bold mb-3 text-orange-400 uppercase text-xs tracking-widest">Collective Support</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">A standard of peer accountability that demands excellence in every interaction.</p>
+                    </div>
                 </div>
-            </div>
-            <button onclick="window.print()" class="no-print mt-4 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-bold transition-all shadow-lg hover:shadow-blue-500/20">
-                Print for Signing
-            </button>
+            </section>
+
+            <!-- Section II: Boundaries -->
+            <section>
+                <div class="flex items-center gap-6 mb-10">
+                    <div class="h-px flex-1 bg-white/10"></div>
+                    <h3 class="serif text-2xl text-white">II. The Boundaries</h3>
+                    <div class="h-px flex-1 bg-white/10"></div>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex gap-6 items-start p-6 glass-panel rounded-2xl">
+                        <div class="text-orange-500 font-bold serif text-xl mt-1">01</div>
+                        <div>
+                            <h4 class="text-white font-semibold mb-1">Professional Priority</h4>
+                            <p class="text-slate-400 text-sm">Domestic interactions must remain professional, objective, and mission-aligned.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 items-start p-6 glass-panel rounded-2xl">
+                        <div class="text-orange-500 font-bold serif text-xl mt-1">02</div>
+                        <div>
+                            <h4 class="text-white font-semibold mb-1">No Fraternization</h4>
+                            <p class="text-slate-400 text-sm">Any engagement in romantic or sexual relationships within the group is strictly prohibited.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 items-start p-6 glass-panel rounded-2xl">
+                        <div class="text-orange-500 font-bold serif text-xl mt-1">03</div>
+                        <div>
+                            <h4 class="text-white font-semibold mb-1">Conflict Neutralization</h4>
+                            <p class="text-slate-400 text-sm">Emotional grievances are checked at the door. The peace of the Casa is non-negotiable.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section III: Consequence -->
+            <section class="relative overflow-hidden group">
+                <div class="absolute inset-0 bg-red-950/20 group-hover:bg-red-950/30 transition-colors"></div>
+                <div class="relative p-10 md:p-14 border border-red-500/20 rounded-[2rem]">
+                    <h3 class="text-red-500 font-black uppercase tracking-[0.3em] text-xs mb-6 text-center">Section III: Zero Tolerance Consequences</h3>
+                    <p class="serif text-xl md:text-2xl text-white mb-10 text-center leading-relaxed italic">
+                        "A breach of boundaries is an act of sabotage against the future."
+                    </p>
+                    
+                    <ul class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center text-xs font-bold uppercase tracking-widest">
+                        <li class="p-4 border border-red-500/30 rounded-xl bg-red-500/5 text-red-200">Immediate Termination</li>
+                        <li class="p-4 border border-red-500/30 rounded-xl bg-red-500/5 text-red-200">Residential Forfeiture</li>
+                        <li class="p-4 border border-red-500/30 rounded-xl bg-red-500/5 text-red-200">Support Dissolution</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Acknowledgment -->
+            <section class="text-center pt-10">
+                <h3 class="serif text-3xl font-bold text-white mb-6">Execution & Vow</h3>
+                <p class="text-slate-400 mb-16 max-w-xl mx-auto font-light">This is a commitment to yourself. You acknowledge that your potential is worth more than any temporary distraction.</p>
+                
+                <!-- Signatures -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16 text-left">
+                    <div class="signature-block">
+                        <div class="border-b border-white/20 pb-4 mb-3">
+                            <span class="serif text-xl italic text-white/40 select-none">Abraham Cruz Ramirez</span>
+                        </div>
+                        <p class="text-[0.6rem] font-bold uppercase tracking-widest text-slate-500">Founder & Executive Lead</p>
+                    </div>
+                    <div class="signature-block">
+                        <div class="border-b border-white/20 pb-4 mb-3 h-10"></div>
+                        <p class="text-[0.6rem] font-bold uppercase tracking-widest text-slate-500">Lidia [Last Name]</p>
+                    </div>
+                    <div class="signature-block">
+                        <div class="border-b border-white/20 pb-4 mb-3 h-10"></div>
+                        <p class="text-[0.6rem] font-bold uppercase tracking-widest text-slate-500">Jaasiel [Last Name]</p>
+                    </div>
+                    <div class="signature-block">
+                        <div class="border-b border-white/20 pb-4 mb-3 h-10"></div>
+                        <p class="text-[0.6rem] font-bold uppercase tracking-widest text-slate-500">Maria [Last Name]</p>
+                    </div>
+                    <div class="signature-block">
+                        <div class="border-b border-white/20 pb-4 mb-3 h-10"></div>
+                        <p class="text-[0.6rem] font-bold uppercase tracking-widest text-slate-500">Louis [Last Name]</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Footer -->
+        <div class="bg-black/40 p-10 text-center text-slate-600 text-[0.6rem] font-bold uppercase tracking-[1em]">
+            Concho River Casa Covenant • Established 2024
         </div>
     </div>
 
-    <script>
-        function calculateEquity() {
-            const profit = parseFloat(document.getElementById('saleProfit').value) || 0;
-            const aExtra = parseFloat(document.getElementById('abrahamExtra').value) || 0;
-            const lExtra = parseFloat(document.getElementById('lidiaExtra').value) || 0;
-
-            // Logic: Pay back the extra inputs first
-            let remainingProfit = profit - aExtra - lExtra;
-            
-            // If profit doesn't cover the debt, just split what's left proportionally
-            if (remainingProfit < 0) {
-                const totalExtra = aExtra + lExtra;
-                const aShare = (aExtra / totalExtra) * profit;
-                const lShare = (lExtra / totalExtra) * profit;
-                document.getElementById('abrahamPayout').innerText = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(aShare);
-                document.getElementById('lidiaPayout').innerText = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(lShare);
-            } else {
-                const splitAmount = remainingProfit / 2;
-                const aTotal = aExtra + splitAmount;
-                const lTotal = lExtra + splitAmount;
-                document.getElementById('abrahamPayout').innerText = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(aTotal);
-                document.getElementById('lidiaPayout').innerText = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(lTotal);
-            }
-        }
-
-        // Attach listeners
-        document.querySelectorAll('input').forEach(input => {
-            input.addEventListener('input', calculateEquity);
-        });
-
-        // Run initial calculation
-        calculateEquity();
-    </script>
 </body>
 </html>
